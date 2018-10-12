@@ -1,0 +1,58 @@
+<div class="container-fluid">
+  <div class="r-header-years">
+    <div class="header-clean">
+
+    </div>
+    <div class="header-year" *ngFor="let x of years;">
+      {{x}}
+    </div>
+  </div>
+  <div class="r-header">
+    <div class="header-clean">
+
+    </div>
+    <div class="header-month" *ngFor="let x of [1,2,3,4];">
+      <div class="month-title">Ja</div>
+      <div class="month-title">Fe</div>
+      <div class="month-title">Ma</div>
+      <div class="month-title">Ap</div>
+      <div class="month-title">Ma</div>
+      <div class="month-title">Ju</div>
+      <div class="month-title">Ju</div>
+      <div class="month-title">Au</div>
+      <div class="month-title">Se</div>
+      <div class="month-title">Oc</div>
+      <div class="month-title">No</div>
+      <div class="month-title">De</div>
+    </div>
+  </div>
+  <div class="r-item" *ngFor="let d of data">
+    <div class="item-title v-text-main">
+      {{d.name}}
+    </div>
+    <div class="item-content">
+      <div class="items" *ngFor="let i of d.items; last as isLast" [ngClass]="{ 'last-item' : isLast }">
+          <div class="items-title v-text">
+            {{i.name}}
+          </div>
+          <div class="items-content">
+            <div class="items-item" *ngFor="let s of i.subitems">
+              <div class="item-title">
+                {{s.name}}
+              </div>
+              <div class="item-content">                
+                <div class="years" *ngFor="let y of s.years">
+                  <div class="year" *ngFor="let v of y.values">
+                    <div class="cell" 
+                      [ngClass]="{'orange': v.value < -5, 'yellow': v.value > -5 && v.value <= 0 }">
+                      <div class="cell-value">{{v.value}}</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>  
+    </div>
+  </div>
+</div>

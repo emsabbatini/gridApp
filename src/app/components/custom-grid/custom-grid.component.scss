@@ -1,0 +1,153 @@
+.r-header-years {
+    height: 24px;
+    width: 1634px;
+    background: #EAEAEA;
+    border: 1px solid #DADADA;
+    border-bottom: none;
+    overflow: hidden;
+    .header-year {
+        float: left;
+        height: 100%;
+        width: 351px;
+        border-left: 1px solid #DADADA;
+        padding-top: 2px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+}
+
+.r-header {
+    height: 24px;
+    width: 1634px;
+    border: 1px solid #DADADA;
+    border-bottom: none;
+    overflow: hidden;
+    .header-month {
+        float: left;
+        height: 100%;
+        width: 351px;
+        border-left: 1px solid #DADADA;
+        overflow: hidden;
+        padding-top: 3px;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .month-title {
+        float: left;
+        height: 100%;
+        width: 29px;
+        font-size: 12px;
+        text-align: center;
+    }   
+}
+.header-clean {
+    float: left;
+    height: 100%;
+    width: 228px;
+}
+
+.r-item {
+    height: 180px;
+    width: 1634px;
+    position: relative;
+    border: 1px solid #DADADA;
+    .item-title {
+        height: 100%;
+        width: 36px;
+        position: absolute;
+    }
+    .item-content{
+        height: 100%;
+        width: 1598px;
+        left: 36px;
+        position: absolute;
+        border-left: 1px solid #DADADA;
+        .items {
+            height: 90px;
+            width: 100%;
+            position: relative;
+            border-bottom: 1px solid #DADADA;
+            .items-title {
+                height: 100%;
+                width: 36px;
+                position: absolute;
+            }
+            .items-content {
+                height: 100%;
+                width: 1562px;
+                left: 36px;
+                position: absolute;
+                border-left: 1px solid #DADADA;
+                .items-item {
+                    position: relative;
+                    height: 30px;
+                    .item-title {
+                        height: 100%;
+                        width: 154px;
+                        position: absolute;
+                        font-size: 12px;
+                        padding-left: 3px;
+                        padding-top: 5px;
+                    }
+                    .item-content {
+                        height: 100%;
+                        width: 1408px;
+                        left: 154px;
+                        position: absolute;
+                        overflow: hidden;
+                        .years {
+                            float: left;
+                            height: 100%;
+                            width: 351px;
+                            overflow: hidden;
+                            border-right: 1px solid #DADADA;
+                            .year {
+                                float: left;
+                                height: 100%;
+                                width: 29px;
+                                text-align: center;
+                                .cell {
+                                    width: 24px;
+                                    height: 20px;
+                                    background: #F8F8F8;
+                                    border-radius: 5px;
+                                    display: inline-block;
+                                    vertical-align: middle;
+                                    font-size: 7px;
+                                    padding-top: 4px;
+                                }
+                                .orange {
+                                    border: 1px solid #E27E57;
+                                    background: #FED9CC;
+                                }
+                                .yellow {
+                                    border: 1px solid #DEC057;
+                                    background: #FFF4CE;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .last-item{
+            border-bottom: none;
+        }
+    }
+}
+
+.v-text-main {
+    display: inline-block;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    top: 60%;
+    color: #0078D7;
+}
+.v-text {
+    display: inline-block;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    top: 75%;
+}
